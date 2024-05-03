@@ -1,5 +1,6 @@
 # challenge3
 Signup Form Page
+
 Introduction
 This project contains the code for a basic signup form web page designed to collect user registrations. It is built with HTML, CSS, and JavaScript and includes validation logic to ensure that user inputs meet specified criteria before submission.
 
