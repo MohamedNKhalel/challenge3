@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+:root{
+    --Tomato: hsl(4, 100%, 67%);
+    --Dark-Slate-Grey: hsl(234, 29%, 20%);
+    --Charcoal-Grey: hsl(235, 18%, 26%);
+    --Grey: hsl(231, 7%, 60%);
+    --White: hsl(0, 0%, 100%);
+}
+body{
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+}
+.mobile{
+    display: none;
+}
+.main{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--Charcoal-Grey);
+}
+.item{
+    background-color: white;
+    padding: 20px;
+    border-radius: 15px;
+    width: 90%;
+    margin: auto;
+    font-size: 16px;
+
+}
+.item .title{ 
+    color: var(--Dark-Slate-Grey);
+    font-weight: 700;
+}
+form input{
+    border: solid gray 1px;
+    padding:10px 15px;
+    width: 100%;
+    border-radius: 6px;
+    outline: none;
+}
+form button{
+    border: none;
+    padding: 10px 20px;
+    background-color: var(--Dark-Slate-Grey);
+    color: white;
+    border-radius: 6px;
+    font-weight: 500;
+    transition: all .5s ease;
+}
+form button:hover{
+    background-color: var(--Tomato);
+}
+.invalid{
+    border: var(--Tomato) solid 1px;
+    background-color: rgba(255, 0, 0, 0.126);
+}
+.invalid::placeholder{
+    color: var(--Tomato);
+}
+#warn{
+    font-size: .9em;
+    font-weight: 700;
+}
+
+.message-card{
+    background-color: white;
+    padding: 45px;
+    border-radius: 15px;
+    width: 400px;
+}
+.message-body h2{
+    color: var(--Dark-Slate-Grey);
+    font-weight: 800;
+    font-size: 35px;
+}
+.message-body p{
+    font-size: 14px;
+}
+.message-card button{
+    padding: 10px;
+    background-color: var(--Dark-Slate-Grey);
+    color:white;
+    border: none;
+    border-radius: 6px;
+    transition: all .5s ease;
+}
+.message-card button:hover{
+    background-color: var(--Tomato);
+}
+.message-body .highlight{
+    color: var(--Dark-Slate-Grey);
+    font-weight: 700;
+}   
+@media screen and (max-width:768px) {
+
+    .mobile{
+        display: block;
+    }
+    .desktop{
+        display: none;
+    }
+    .item{
+        font-size: 14px;
+        width: 100%;
+        border-radius: 0;
+    }
+    .one{
+        order: 2;
+    }
+    .two{
+        order: 1;
+    }
+    .message-card{
+        height: 100vh;
+        border-radius: 0;
+        justify-content: space-between;
+        width: 100%;
+    }
+}
